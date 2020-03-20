@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Okami</title>
+</head>
+<body>
+<div class="container-fluid header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">Okami</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+<!--            <form class="form-inline my-2 my-lg-0">-->
+<!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--            </form>-->
+        </div>
+    </nav>
+</div>
+<div class="container-fluid row">
+    <div class="col-2 content">
+        <ul>
+            <a href="#"><li>рабочи стол</li></a>
+            <a href="#"><li>сотрудники</li></a>
+            <a href="#"><li>студенты</li></a>
+            <a href="#"><li>задачи</li></a>
+            <a href="#"><li>отчет</li></a>
+            <a href="#"><li>лекции</li></a>
+            <a href="#"><li>документация</li></a>
+        </ul>
+    </div>
+    <div class="col content content-task">
+        <div class="row">
+            <div class="col-3 mini-task">
+                <ul>
+                    <li>названия задачи</li>
+                    <li>описания</li>
+                    <li>дата</li>
+                    <li>дата завершения</li>
+                    <li>коментарий</li>
+                    <li>статус</li>
+                    <li>отправить отчет</li>
+                </ul>
+            </div>
+            <div class="col-3 mini-task">
+                <ul>
+                    <li>ФИО сотрудника</li>
+                    <li>кафедра</li>
+                    <li>спецальность</li>
+                    <li>дата раждения</li>
+                    <li>создать задачу</li>
+                    <li>отправить отчет</li>
+                </ul>
+            </div>
+            <div class="col-3 mini-task">
+                <ul>
+                    <li>придмет</li>
+                    <li>тем: 15</li>
+<!--                    <li>лекция</li>-->
+<!--                    <li>практика</li>-->
+<!--                    <li>отправить отчет</li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col displayNone task-progress">
+                задачи:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col displayNone task-progress">
+                задачи:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                </div>
+                лекции:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                </div>
+                практика:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 task-info displayNone">
+                <ul>
+                    <li>названия задачи</li>
+                    <li>описания</li>
+                    <li>дата</li>
+                    <li>дата завершения</li>
+                    <li>коментарий</li>
+                    <li>статус</li>
+                    <li><a href="#" class="btn btn-primary">отправить отчет</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 displayNone task-user">
+                <ul>
+                    <li>заказчик</li>
+                    <li>ФИО сотрудника</li>
+                    <li>кафедра</li>
+                    <li>спецальность</li>
+                    <li>дата раждения</li>
+                    <li><a href="#task">создать задачу</a></li>
+                    <li><a href="#">отправить отчет</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 displayNone task-user">
+                <form>
+                    <ul>
+                        <li>исполнитель</li>
+                        <li>ФИО сотрудника</li>
+                        <li>
+                            назначить:
+                            <select>
+                                <option>fio_1</option>
+                                <option>fio_1</option>
+                                <option>fio_1</option>
+                            </select>
+                        </li>
+                        <li>кафедра</li>
+                        <li>спецальность</li>
+                        <li>дата раждения</li>
+                        <li><a href="#task">создать задачу</a></li>
+                        <li><input type="submit" class="btn btn-primary" value="сохронить"> </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col displayNone task-progress">
+                лекции:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                </div>
+                практика:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row lecture displayNone">
+            <ul>
+                <li>лекция</li>
+                <li>описание</li>
+                <li><a href="#">читать лекцию</a> </li>
+            </ul>
+        </div>
+        <div class="row new-lecture displayNone">
+            <form>
+                <table>
+                    <tr>
+                        <td>предмет</td>
+                        <td>
+                            <select>
+                                <option>придмет_1</option>
+                                <option>придмет_1</option>
+                                <option>придмет_1</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>лекция</td>
+                        <td><input type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td>описание</td>
+                        <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>контент</td>
+                        <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="btn btn-primary" value="создать"> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="row displayNone" id="task">
+            <div class="col task-progress">
+                <form>
+                    <table>
+                        <tr>
+                            <td>названия задачи</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>заказчик</td>
+                            <td>автомотически постовляеться</td>
+                        </tr>
+                        <tr>
+                            <td>исполнитель</td>
+                            <td>
+                                <select>
+                                    <option>fio_1</option>
+                                    <option>fio_1</option>
+                                    <option>fio_1</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>описания</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>дата</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>дата завершения</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>коментарий</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="btn btn-primary" value=" отправить отчет"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="row displayNone">
+            <div class="col task">
+                <form>
+                    <table>
+                        <tr>
+                            <td>ФИО сотрудника</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>кафедра</td>
+                            <td><input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>спецальность</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>дата раждения</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="создать сотрудника"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="row displayNone">
+            <div class="col task">
+                <form>
+                    <table>
+                        <tr>
+                            <td>придмет</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>лекция</td>
+                            <td><input type="text"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>описания</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>практика</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="создать лекцию"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="row displayNone">
+            <div class="col task">
+                error number
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="row">
+            <div class="col"><a href="#">о сайте</a></div>
+            <div class="col"><a href="#">документация</a></div>
+        </div>
+    </nav>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
+</html>
